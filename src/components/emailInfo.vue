@@ -50,21 +50,19 @@ import { mapGetters, mapActions } from 'vuex';
  #emailInfo {
         grid-row: 3/4;
         grid-column: 1/2;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-items: center;
  }
 
  #email-div {
      width: 100%;
      height: 100%;
-     display: grid;
-     grid-template-rows: 100%;
-     grid-template-columns: 15% 35% 50%;
+     display: flex;
+     flex-flow: column;
+     justify-content: flex-start;
+     align-items: center;
  }
 
  h1 {
+     margin-top: 1rem;
      margin-bottom: .5rem;
      font-size: 1rem;
      font-family: 'Questrial', sans-serif;
@@ -83,7 +81,6 @@ import { mapGetters, mapActions } from 'vuex';
 
  #date {
      width: 100%;
-     height: 100%;
      grid-row: 1/2;
      grid-column: 1/2;
      display: flex;
@@ -94,7 +91,6 @@ import { mapGetters, mapActions } from 'vuex';
 
   #subject {
      width: 100%;
-     height: 100%;
      grid-row: 1/2;
      grid-column: 2/3;
      display: flex;
@@ -105,7 +101,6 @@ import { mapGetters, mapActions } from 'vuex';
 
     #recipients {
         width: 100%;
-        height: 100%;
         grid-row: 1/2;
         grid-column: 3/4;
         display: flex;
@@ -116,19 +111,19 @@ import { mapGetters, mapActions } from 'vuex';
 
     #recipients ul {
         border: solid hsl(0 , 0%, 40%) 1px;
-        width: 90%;
-        height: 1.5rem;
+        width: 80%;
+        height: 200px;
         text-align: center;
         padding: 5px;
         box-shadow: 5px 5px  hsl(0 , 0%, 40%);
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
         overflow: scroll;
     }
 
     #recipients li {
-        margin-right: .8rem;
         font-size: 1rem;
+        margin-bottom: .3rem;
     }
 
 

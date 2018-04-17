@@ -3,6 +3,7 @@
     <Header />
     <Menu />
     <emailInfo/>
+    <Analytics/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@ import { mapGetters, mapActions } from 'vuex';
 import Header from './components/header.vue';
 import Menu from './components/menu.vue';
 import emailInfo from './components/emailInfo.vue';
+import Analytics from './components/analytics.vue';
 
   export default {
   name: 'app',
   components: {
     Header,
     Menu,
-    emailInfo
+    emailInfo,
+    Analytics
   },
   data() {
     return {
@@ -91,7 +94,7 @@ import emailInfo from './components/emailInfo.vue';
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 80px 80px 80px 360px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80px 80px 440px;
   }
 </style>

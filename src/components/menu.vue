@@ -38,7 +38,7 @@ import { mapGetters, mapActions } from 'vuex';
 <style scoped>
  #menu {
         grid-row: 2/3;
-        grid-column: 1/2;
+        grid-column: 1/3;
         background-color: hsl(0 , 0%, 50%);
         display: flex;
         flex-flow: row;
